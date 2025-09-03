@@ -6,11 +6,6 @@ import Image from 'next/image';
 
 import { cva } from 'class-variance-authority';
 
-import TabContextMenu from '@/components/components/TabContextMenu';
-import {
-  ContextMenu,
-  ContextMenuTrigger,
-} from '@/shadcn/components/ui/context-menu';
 import { cn } from '@/shadcn/lib/utils';
 
 const tabButtonVariants = cva(
@@ -21,7 +16,7 @@ const tabButtonVariants = cva(
         default:
           'bg-tab-button-background/15 border border-tab-button-background/0 text-tab-button-text hover:bg-tab-button-background/35 transition-colors duration-150',
         active:
-          'bg-background text-foreground shadow-md border border-tab-border transition-colors duration-150',
+          'bg-background text-foreground shadow-md border border-tab-border hover:bg-tab-button-background/15 transition-colors duration-150',
       },
     },
     defaultVariants: {
@@ -36,24 +31,26 @@ function TabButton({
   icon,
   text,
   onClick,
+  blurOnMouseDown,
 }: {
   className?: string;
   variant: 'default' | 'active' | null | undefined;
   icon: string;
   text: string;
   onClick?: () => void;
+  blurOnMouseDown?: boolean;
 }): ReactElement {
-  const isActive: boolean = variant === 'active';
-  const iconColor: string = isActive ? '_active' : '';
-  const showOptions: boolean = isActive && icon !== 'add';
+  const iconColor = variant === 'active' ? '_active' : '';
+  const showOptions = variant === 'active' && icon !== 'add';
 
-  const Button: ReactElement = (
+  return (
     <button
       type="button"
-      onClick={onClick}
       className={cn(
         tabButtonVariants({ variant: variant || 'default', className }),
       )}
+      onClick={onClick}
+      onMouseDown={blurOnMouseDown ? e => e.currentTarget.blur() : undefined}
     >
       <Image
         src={`/icons/${icon}${iconColor}.svg`}
@@ -62,7 +59,9 @@ function TabButton({
         height={20}
       />
       <span>{text}</span>
-      <div
+
+      {/* Animated options icon with width/margin collapse */}
+      <span
         className={cn(
           'inline-flex items-center justify-center overflow-hidden transition-all duration-200 ease-out',
           showOptions
@@ -78,20 +77,8 @@ function TabButton({
           height={16}
           className="w-4 h-4"
         />
-      </div>
+      </span>
     </button>
-  );
-
-  {
-    /* Optimization to load ContextMenu only when needed */
-  }
-  if (!showOptions) return Button;
-
-  return (
-    <ContextMenu>
-      <ContextMenuTrigger asChild>{Button}</ContextMenuTrigger>
-      <TabContextMenu />
-    </ContextMenu>
   );
 }
 
