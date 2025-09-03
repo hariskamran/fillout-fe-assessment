@@ -19,7 +19,7 @@ const tabButtonVariants = cva(
     variants: {
       variant: {
         default:
-          'bg-tab-button-background/15 border border-tab-button-background/0 text-tab-button-text hover:bg-tab-button-background/35 transition-colors duration-150',
+          'bg-tab-button-background/15 border border-tab-button-background/0 text-tab-button-text hover:bg-tab-button-background/35 transition-colors duration-150 focus-visible:bg-background focus-visible:text-foreground focus-visible:shadow-md focus-visible:border focus-visible:border-tab-border focus-visible:border-[#2F72E2]',
         active:
           'bg-background text-foreground shadow-md border border-tab-border hover:bg-tab-button-background/5 transition-colors duration-150',
       },
@@ -45,7 +45,6 @@ function TabButton({
 }): ReactElement {
   const isActive = variant === 'active';
   const showOptions = isActive && icon !== 'add';
-  const iconColor = isActive ? '_active' : '';
 
   return (
     <ContextMenu>
@@ -57,16 +56,34 @@ function TabButton({
             if (!isActive) e.preventDefault();
           }}
           className={cn(
-            'fade-in-pop',
+            'fade-in-pop group',
             tabButtonVariants({ variant: variant || 'default', className }),
           )}
         >
-          <Image
-            src={`/icons/${icon}${iconColor}.svg`}
-            alt={text.toLowerCase()}
-            width={20}
-            height={20}
-          />
+          <span className="relative inline-flex w-5 h-5 items-center justify-center">
+            {/* Default icon */}
+            <Image
+              src={`/icons/${icon}.svg`}
+              alt={text.toLowerCase()}
+              width={20}
+              height={20}
+              className={cn(
+                'w-5 h-5',
+                isActive ? 'hidden' : 'block group-focus-visible:hidden',
+              )}
+            />
+            {/* Active icon */}
+            <Image
+              src={`/icons/${icon}_active.svg`}
+              alt={text.toLowerCase()}
+              width={20}
+              height={20}
+              className={cn(
+                'w-5 h-5 absolute inset-0',
+                isActive ? 'block' : 'hidden group-focus-visible:block',
+              )}
+            />
+          </span>
           <span>{text}</span>
           <div
             className={cn(
