@@ -13,11 +13,13 @@ function SortableTab({
   isActive,
   onClick,
   onInsertAfter,
+  isFirstPage,
 }: {
   page: Page;
   isActive: boolean;
   onClick: () => void;
   onInsertAfter?: () => void;
+  isFirstPage?: boolean;
 }): ReactElement {
   const {
     attributes,
@@ -57,6 +59,8 @@ function SortableTab({
             variant={isActive ? 'active' : 'default'}
             icon={page.icon}
             text={page.name}
+            slug={page.slug}
+            isFirstPage={isFirstPage}
           />
           <TabHoverActions onInsert={onInsertAfter} />
           <div className="shrink-0 -ml-px">

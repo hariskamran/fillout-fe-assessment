@@ -2,6 +2,7 @@ import React, { ReactElement } from 'react';
 
 import Image from 'next/image';
 
+import useTabContextActions from '@/hooks/useTabContextActions';
 import {
   ContextMenuContent,
   ContextMenuItem,
@@ -9,7 +10,9 @@ import {
   ContextMenuSeparator,
 } from '@/shadcn/components/ui/context-menu';
 
-function TabContextMenu(): ReactElement {
+function TabContextMenu({ slug }: { slug: string }): ReactElement {
+  const { setFirstPage } = useTabContextActions();
+
   return (
     <ContextMenuContent className="w-56 border-0">
       {/* Header */}
@@ -17,7 +20,7 @@ function TabContextMenu(): ReactElement {
 
       <ContextMenuSeparator />
 
-      <ContextMenuItem>
+      <ContextMenuItem onClick={() => setFirstPage(slug)}>
         <Image src="/icons/flag.svg" alt="flag" width={16} height={16} />
         <span>Set first page</span>
       </ContextMenuItem>

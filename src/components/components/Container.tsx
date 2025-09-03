@@ -73,6 +73,7 @@ function Container(): ReactElement {
                 isActive={page === p.slug}
                 onClick={() => setPage(p.slug)}
                 onInsertAfter={() => addPageAt(i + 1)}
+                isFirstPage={i === 0}
               />
             ))}
           </SortableContext>

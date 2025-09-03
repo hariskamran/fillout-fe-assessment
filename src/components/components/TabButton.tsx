@@ -35,16 +35,20 @@ function TabButton({
   variant,
   icon,
   text,
+  slug,
   onClick,
+  isFirstPage,
 }: {
   className?: string;
   variant: 'default' | 'active' | null | undefined;
   icon: string;
   text: string;
+  slug?: string;
   onClick?: () => void;
+  isFirstPage?: boolean;
 }): ReactElement {
   const isActive = variant === 'active';
-  const showOptions = isActive && icon !== 'add';
+  const showOptions = isActive && icon !== 'add' && !isFirstPage;
 
   return (
     <ContextMenu>
@@ -104,7 +108,7 @@ function TabButton({
           </span>
         </button>
       </ContextMenuTrigger>
-      <TabContextMenu />
+      {slug ? <TabContextMenu slug={slug} /> : null}
     </ContextMenu>
   );
 }
