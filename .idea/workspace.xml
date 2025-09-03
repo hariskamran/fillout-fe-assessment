@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61a213b0-6f1e-4050-842c-2c04db9f0e38" name="Changes" comment="Refactor TabButton: enhance focus-visible styles, replace `div` with `button`, and improve context menu handling.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/components/TabButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/components/TabButton.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="61a213b0-6f1e-4050-842c-2c04db9f0e38" name="Changes" comment="Update workspace.xml: revise comments and tasks for TabButton refactor" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -236,7 +233,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756911699089</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Update workspace.xml: revise comments and tasks for TabButton refactor">
+      <option name="closed" value="true" />
+      <created>1756911747811</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1756911747811</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,7 +287,8 @@
     <MESSAGE value="Improve focus-visible styles for TabButton and SortableTab&#10;&#10;- Enhanced `focus-visible` styles on `TabButton` for better accessibility and visuals&#10;- Updated dynamic icon handling for `TabButton` based on focus state&#10;- Adjusted `SortableTab` to include `tabIndex` modifications for consistent behavior" />
     <MESSAGE value="**Refactor TabButton for improved focus-visible styles and context menu interaction**  &#10;- Enhanced `focus-visible` styles for better accessibility.  &#10;- Replaced `div` with `button` for dynamic context menu handling.  &#10;- Adjusted behavior to prevent unwanted outer tab click interactions." />
     <MESSAGE value="Refactor TabButton: enhance focus-visible styles, replace `div` with `button`, and improve context menu handling." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor TabButton: enhance focus-visible styles, replace `div` with `button`, and improve context menu handling." />
+    <MESSAGE value="Update workspace.xml: revise comments and tasks for TabButton refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update workspace.xml: revise comments and tasks for TabButton refactor" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
