@@ -49,7 +49,7 @@ function TabContextMenu(): ReactElement {
       {/* Footer */}
       <ContextMenuItem variant="destructive">
         <Image src="/icons/delete.svg" alt="delete" width={16} height={16} />
-        <span>delete</span>
+        <span>Delete</span>
       </ContextMenuItem>
     </ContextMenuContent>
   );

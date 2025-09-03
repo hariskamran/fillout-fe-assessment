@@ -64,7 +64,6 @@ function Container(): ReactElement {
                   variant={page === overlayPage.slug ? 'active' : 'default'}
                   icon={overlayPage.icon}
                   text={overlayPage.name}
-                  blurOnMouseDown
                 />
               </div>
             ) : null}

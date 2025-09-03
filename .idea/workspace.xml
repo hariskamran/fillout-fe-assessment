@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61a213b0-6f1e-4050-842c-2c04db9f0e38" name="Changes" comment="Implement tab navigation structure and initial UI components&#10;&#10;- Add core `Container` component for tab layout.&#10;- Introduce `TabButton` and `TabHoverActions` for interactive tab behavior.&#10;- Create utility components: `DottedLines` and `SmallRoundButton`.&#10;- Add `useAppStore` for state management using Zustand.&#10;- Set up `PAGES` data and associated `Page` type definition.&#10;- Update `tsconfig.json` paths for organized imports.&#10;- Include dependencies: `zustand`, `class-variance-authority`, `clsx`, and more.">
+    <list default="true" id="61a213b0-6f1e-4050-842c-2c04db9f0e38" name="Changes" comment="Add `@radix-ui/react-context-menu` dependency">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/components/Container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/components/Container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/components/SortableTab.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/components/SortableTab.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/components/TabButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/components/TabButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/data/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/data/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useDraggableTabs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useDraggableTabs.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stores/useAppStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/useAppStore.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/components/TabContextMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/components/TabContextMenu.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +150,23 @@
       <option name="project" value="LOCAL" />
       <updated>1756869001580</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="**Update workspace configuration and adjust pnpm-lock formatting**">
+      <option name="closed" value="true" />
+      <created>1756897375930</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1756897375930</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add `@radix-ui/react-context-menu` dependency">
+      <option name="closed" value="true" />
+      <created>1756897459306</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1756897459306</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,7 +200,10 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Add new icons, components, and utilities for improved UI functionality" />
     <MESSAGE value="Implement tab navigation structure and initial UI components&#10;&#10;- Add core `Container` component for tab layout.&#10;- Introduce `TabButton` and `TabHoverActions` for interactive tab behavior.&#10;- Create utility components: `DottedLines` and `SmallRoundButton`.&#10;- Add `useAppStore` for state management using Zustand.&#10;- Set up `PAGES` data and associated `Page` type definition.&#10;- Update `tsconfig.json` paths for organized imports.&#10;- Include dependencies: `zustand`, `class-variance-authority`, `clsx`, and more." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement tab navigation structure and initial UI components&#10;&#10;- Add core `Container` component for tab layout.&#10;- Introduce `TabButton` and `TabHoverActions` for interactive tab behavior.&#10;- Create utility components: `DottedLines` and `SmallRoundButton`.&#10;- Add `useAppStore` for state management using Zustand.&#10;- Set up `PAGES` data and associated `Page` type definition.&#10;- Update `tsconfig.json` paths for organized imports.&#10;- Include dependencies: `zustand`, `class-variance-authority`, `clsx`, and more." />
+    <MESSAGE value="**Adjust Container and TabContextMenu components; Minor IDE configuration updates**  &#10;- Removed `max-w` from `Container` component to ensure consistent width.  &#10;- Modified `TabContextMenu` styles (added `text-lg` to label and updated destructive delete content).  &#10;- Updated `.idea/workspace.xml` reflecting new component changes." />
+    <MESSAGE value="**Update workspace configuration and adjust pnpm-lock formatting**" />
+    <MESSAGE value="Add `@radix-ui/react-context-menu` dependency" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add `@radix-ui/react-context-menu` dependency" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
