@@ -85,14 +85,32 @@ function TabButton({
             />
           </span>
           <span>{text}</span>
-          <div
+          <button
+            type="button"
             className={cn(
-              'inline-flex items-center justify-center overflow-hidden transition-all duration-200 ease-out',
+              'inline-flex items-center justify-center overflow-hidden transition-all duration-200 ease-out py-1.5 rounded-md hover:bg-tab-button-background/10 cursor-pointer',
               showOptions
                 ? 'w-4 ml-1 opacity-100 scale-100 translate-x-0'
                 : 'w-0 ml-0 opacity-0 scale-75 -translate-x-1 pointer-events-none',
             )}
             aria-hidden={!showOptions}
+            onClick={e => {
+              e.preventDefault();
+              e.stopPropagation();
+
+              const el = e.currentTarget as HTMLElement;
+              const rect = el.getBoundingClientRect();
+
+              const contextEvent = new MouseEvent('contextmenu', {
+                bubbles: true,
+                cancelable: true,
+                view: window,
+                clientX: rect.left + rect.width / 2,
+                clientY: rect.top + rect.height / 2,
+              });
+
+              el.dispatchEvent(contextEvent);
+            }}
           >
             <Image
               src="/icons/options.svg"
@@ -101,7 +119,7 @@ function TabButton({
               height={16}
               className="w-4 h-4"
             />
-          </div>
+          </button>
         </button>
       </ContextMenuTrigger>
       <TabContextMenu />
