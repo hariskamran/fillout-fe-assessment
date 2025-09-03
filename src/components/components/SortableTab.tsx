@@ -12,10 +12,12 @@ function SortableTab({
   page,
   isActive,
   onClick,
+  onInsertAfter,
 }: {
   page: Page;
   isActive: boolean;
   onClick: () => void;
+  onInsertAfter?: () => void;
 }): ReactElement {
   const {
     attributes,
@@ -35,7 +37,7 @@ function SortableTab({
     <div
       ref={setNodeRef}
       style={style}
-      className="group flex items-center"
+      className="group flex items-center shrink-0"
       {...attributes}
       {...listeners}
     >
@@ -55,7 +57,7 @@ function SortableTab({
             icon={page.icon}
             text={page.name}
           />
-          <TabHoverActions />
+          <TabHoverActions onInsert={onInsertAfter} />
           <div className="shrink-0 -ml-px">
             <DottedLines />
           </div>

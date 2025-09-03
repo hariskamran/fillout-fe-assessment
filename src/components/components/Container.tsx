@@ -12,8 +12,9 @@ import {
 
 import SortableTab from '@/components/components/SortableTab';
 import TabButton from '@/components/components/TabButton';
-import { PAGES_BY_SLUG } from '@/components/data';
+import TabHoverActions from '@/components/components/TabHoverActions';
 import useDraggableTabs from '@/hooks/useDraggableTabs';
+import useAppStore from '@/stores/useAppStore';
 import { Page } from '@/types';
 
 function Container(): ReactElement {
@@ -28,14 +29,15 @@ function Container(): ReactElement {
     handleDragEnd,
     handleDragCancel,
   } = useDraggableTabs();
+  const { addPageAt, addPageToEnd } = useAppStore();
 
   const overlayPage: Page | null = activeSlug
-    ? PAGES_BY_SLUG[activeSlug]
+    ? orderedPages.find(p => p.slug === activeSlug) || null
     : null;
 
   return (
     <div className="w-[1100px] h-[72px] bg-white shadow-md rounded-md px-5">
-      <div className="w-auto h-full flex items-center relative overflow-hidden">
+      <div className="w-auto h-full flex items-center relative overflow-y-hidden overflow-x-auto  [-ms-overflow-style:'none'] [scrollbar-width:'5px'] [&::-webkit-scrollbar]:hidden">
         <DndContext
           sensors={sensors}
           onDragStart={handleDragStart}
@@ -47,12 +49,16 @@ function Container(): ReactElement {
             items={tabsOrder}
             strategy={horizontalListSortingStrategy}
           >
-            {orderedPages.map(p => (
+            {/* insertion slot before first tab */}
+            <TabHoverActions onInsert={() => addPageAt(0)} />
+
+            {orderedPages.map((p, i) => (
               <SortableTab
                 key={p.slug}
                 page={p}
                 isActive={page === p.slug}
                 onClick={() => setPage(p.slug)}
+                onInsertAfter={() => addPageAt(i + 1)}
               />
             ))}
           </SortableContext>
@@ -70,7 +76,12 @@ function Container(): ReactElement {
           </DragOverlay>
         </DndContext>
 
-        <TabButton variant="active" icon="add" text="Add Page" />
+        <TabButton
+          variant="active"
+          icon="add"
+          text="Add Page"
+          onClick={() => addPageToEnd()}
+        />
       </div>
     </div>
   );

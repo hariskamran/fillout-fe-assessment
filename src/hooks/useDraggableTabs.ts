@@ -14,8 +14,15 @@ import useAppStore from '@/stores/useAppStore';
 import { Page } from '@/types';
 
 function useDraggableTabs() {
-  const { page, setPage, tabsOrder, setTabsOrder, beginDrag, endDrag } =
-    useAppStore();
+  const {
+    page,
+    setPage,
+    tabsOrder,
+    setTabsOrder,
+    beginDrag,
+    endDrag,
+    dynamicPages,
+  } = useAppStore();
 
   // Initialize order from PAGES once (watch length only)
   useEffect(() => {
@@ -28,7 +35,7 @@ function useDraggableTabs() {
     !tabsOrder || tabsOrder.length === 0
       ? PAGES
       : tabsOrder
-          .map(slug => PAGES_BY_SLUG[slug])
+          .map(slug => dynamicPages[slug] ?? PAGES_BY_SLUG[slug])
           .filter((p): p is Page => Boolean(p));
 
   const sensors = useSensors(
