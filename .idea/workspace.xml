@@ -5,22 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61a213b0-6f1e-4050-842c-2c04db9f0e38" name="Changes" comment="Initial Commit">
-      <change afterPath="$PROJECT_DIR$/public/icons/add_active.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/components/Container.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/components/SmallRoundButton.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/components/TabButton.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/components/TabHoverActions.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/components/ui/DottedLines.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/data/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layout/MainLayout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stores/useAppStore.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/components/Container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/components/Container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/components/TabButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/components/TabButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/data/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/data/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shadcn/lib/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shadcn/lib/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stores/useAppStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/useAppStore.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +46,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "feature/context-menu",
     "js.debugger.nextJs.config.created.client": "true",
     "js.debugger.nextJs.config.created.server": "true",
     "js.linters.configure.manually.selectedeslint": "true",
@@ -66,6 +60,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "pnpm",
     "npm.Next.js: server-side.executor": "Run",
+    "npm.format.executor": "Run",
     "prettierjs.PrettierConfiguration.Package": "C:\\FILES\\Haris\\Assessments\\fillout\\fe-assessment\\node_modules\\prettier",
     "settings.editor.selected.configurable": "junie.application.models",
     "to.speed.mode.migration.done": "true",
@@ -83,7 +78,7 @@
       <recent name="C:\FILES\Haris\Assessments\fillout\fe-assessment\src\shadcn" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.Next.js: server-side">
+  <component name="RunManager" selected="npm.format">
     <configuration name="Next.js: debug client-side" type="JavascriptDebugType" uri="http://localhost:3000/">
       <method v="2" />
     </configuration>
@@ -97,6 +92,21 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="format" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="format" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.format" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
