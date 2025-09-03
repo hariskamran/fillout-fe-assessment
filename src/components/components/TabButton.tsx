@@ -85,8 +85,7 @@ function TabButton({
             />
           </span>
           <span>{text}</span>
-          <button
-            type="button"
+          <span
             className={cn(
               'inline-flex items-center justify-center overflow-hidden transition-all duration-200 ease-out',
               showOptions
@@ -102,7 +101,7 @@ function TabButton({
               height={16}
               className="w-4 h-4"
             />
-          </button>
+          </span>
         </button>
       </ContextMenuTrigger>
       <TabContextMenu />
