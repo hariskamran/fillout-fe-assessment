@@ -3,7 +3,11 @@ import React, { ReactElement } from 'react';
 import SmallRoundButton from '@/components/components/SmallRoundButton';
 import DottedLines from '@/components/components/ui/DottedLines';
 
-function TabHoverActions(): ReactElement {
+function TabHoverActions({
+  onInsert,
+}: {
+  onInsert?: () => void;
+}): ReactElement {
   return (
     <div
       className="
@@ -33,7 +37,7 @@ function TabHoverActions(): ReactElement {
             group-hover:scale-100 group-focus-within:scale-100
           "
         >
-          <SmallRoundButton />
+          <SmallRoundButton onClick={onInsert} />
         </span>
       </div>
     </div>
