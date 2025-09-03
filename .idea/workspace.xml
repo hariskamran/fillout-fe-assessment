@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61a213b0-6f1e-4050-842c-2c04db9f0e38" name="Changes" comment="Add horizontal scroll and dynamic button behavior for containers and improve the fade-in animation for TabButton.">
+    <list default="true" id="61a213b0-6f1e-4050-842c-2c04db9f0e38" name="Changes" comment="Simplify hover actions by replacing `group-focus-within` with `group-has-[:focus-visible]`, remove unused `TabHoverActions` in `Container`, and improve focus styles for buttons and tabs.">
+      <change afterPath="$PROJECT_DIR$/src/components/layout/MobileRestriction.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/components/Container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/components/Container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/components/SmallRoundButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/components/SmallRoundButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/components/SortableTab.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/components/SortableTab.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/components/TabHoverActions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/components/TabHoverActions.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +20,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/add-new-tab" />
+        <entry key="$PROJECT_DIR$" value="fix/hover-interaction" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -45,7 +43,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "fix/hover-interaction",
+    "git-widget-placeholder": "master",
     "js.debugger.nextJs.config.created.client": "true",
     "js.debugger.nextJs.config.created.server": "true",
     "js.linters.configure.manually.selectedeslint": "true",
@@ -199,7 +197,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756903923729</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Simplify hover actions by replacing `group-focus-within` with `group-has-[:focus-visible]`, remove unused `TabHoverActions` in `Container`, and improve focus styles for buttons and tabs.">
+      <option name="closed" value="true" />
+      <created>1756906920869</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1756906920869</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,7 +246,8 @@
     <MESSAGE value="&quot;Add dynamic tab creation and insertion functionality with hover actions; refactor tab-related components for enhanced usability.&quot;" />
     <MESSAGE value="Add horizontal scroll functionality with dynamic buttons for Containers" />
     <MESSAGE value="Add horizontal scroll and dynamic button behavior for containers and improve the fade-in animation for TabButton." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add horizontal scroll and dynamic button behavior for containers and improve the fade-in animation for TabButton." />
+    <MESSAGE value="Simplify hover actions by replacing `group-focus-within` with `group-has-[:focus-visible]`, remove unused `TabHoverActions` in `Container`, and improve focus styles for buttons and tabs." />
+    <option name="LAST_COMMIT_MESSAGE" value="Simplify hover actions by replacing `group-focus-within` with `group-has-[:focus-visible]`, remove unused `TabHoverActions` in `Container`, and improve focus styles for buttons and tabs." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
