@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61a213b0-6f1e-4050-842c-2c04db9f0e38" name="Changes" comment="Improve focus-visible styles for TabButton and SortableTab&#10;&#10;- Enhanced `focus-visible` styles on `TabButton` for better accessibility and visuals&#10;- Updated dynamic icon handling for `TabButton` based on focus state&#10;- Adjusted `SortableTab` to include `tabIndex` modifications for consistent behavior">
+    <list default="true" id="61a213b0-6f1e-4050-842c-2c04db9f0e38" name="Changes" comment="**Refactor TabButton for improved focus-visible styles and context menu interaction**  &#10;- Enhanced `focus-visible` styles for better accessibility.  &#10;- Replaced `div` with `button` for dynamic context menu handling.  &#10;- Adjusted behavior to prevent unwanted outer tab click interactions.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/components/TabButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/components/TabButton.tsx" afterDir="false" />
     </list>
@@ -220,7 +220,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756911070583</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="**Refactor TabButton for improved focus-visible styles and context menu interaction**  &#10;- Enhanced `focus-visible` styles for better accessibility.  &#10;- Replaced `div` with `button` for dynamic context menu handling.  &#10;- Adjusted behavior to prevent unwanted outer tab click interactions.">
+      <option name="closed" value="true" />
+      <created>1756911548755</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1756911548755</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,7 +272,8 @@
     <MESSAGE value="Simplify hover actions by replacing `group-focus-within` with `group-has-[:focus-visible]`, remove unused `TabHoverActions` in `Container`, and improve focus styles for buttons and tabs." />
     <MESSAGE value="&quot;Add viewport settings and restrict access to mobile devices with a new `MobileRestriction` component&quot;" />
     <MESSAGE value="Improve focus-visible styles for TabButton and SortableTab&#10;&#10;- Enhanced `focus-visible` styles on `TabButton` for better accessibility and visuals&#10;- Updated dynamic icon handling for `TabButton` based on focus state&#10;- Adjusted `SortableTab` to include `tabIndex` modifications for consistent behavior" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improve focus-visible styles for TabButton and SortableTab&#10;&#10;- Enhanced `focus-visible` styles on `TabButton` for better accessibility and visuals&#10;- Updated dynamic icon handling for `TabButton` based on focus state&#10;- Adjusted `SortableTab` to include `tabIndex` modifications for consistent behavior" />
+    <MESSAGE value="**Refactor TabButton for improved focus-visible styles and context menu interaction**  &#10;- Enhanced `focus-visible` styles for better accessibility.  &#10;- Replaced `div` with `button` for dynamic context menu handling.  &#10;- Adjusted behavior to prevent unwanted outer tab click interactions." />
+    <option name="LAST_COMMIT_MESSAGE" value="**Refactor TabButton for improved focus-visible styles and context menu interaction**  &#10;- Enhanced `focus-visible` styles for better accessibility.  &#10;- Replaced `div` with `button` for dynamic context menu handling.  &#10;- Adjusted behavior to prevent unwanted outer tab click interactions." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -94,23 +94,6 @@ function TabButton({
                 : 'w-0 ml-0 opacity-0 scale-75 -translate-x-1 pointer-events-none',
             )}
             aria-hidden={!showOptions}
-            onClick={e => {
-              e.preventDefault();
-              e.stopPropagation();
-
-              const el = e.currentTarget as HTMLElement;
-              const rect = el.getBoundingClientRect();
-
-              const contextEvent = new MouseEvent('contextmenu', {
-                bubbles: true,
-                cancelable: true,
-                view: window,
-                clientX: rect.left + rect.width / 2,
-                clientY: rect.top + rect.height / 2,
-              });
-
-              el.dispatchEvent(contextEvent);
-            }}
           >
             <Image
               src="/icons/options.svg"
