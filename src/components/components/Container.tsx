@@ -34,7 +34,7 @@ function Container(): ReactElement {
     : null;
 
   return (
-    <div className="w-full max-w-[1100px] h-[72px] bg-white shadow-md rounded-md px-5">
+    <div className="w-[1100px] h-[72px] bg-white shadow-md rounded-md px-5">
       <div className="w-auto h-full flex items-center relative overflow-hidden">
         <DndContext
           sensors={sensors}
@@ -64,7 +64,6 @@ function Container(): ReactElement {
                   variant={page === overlayPage.slug ? 'active' : 'default'}
                   icon={overlayPage.icon}
                   text={overlayPage.name}
-                  blurOnMouseDown
                 />
               </div>
             ) : null}

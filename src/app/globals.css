@@ -1,5 +1,5 @@
-@import "tailwindcss";
-@import "tw-animate-css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -54,7 +54,11 @@
 }
 
 body {
-  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  font-family:
+    var(--font-inter),
+    system-ui,
+    -apple-system,
+    sans-serif;
 }
 
 :root {
@@ -91,8 +95,8 @@ body {
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
-  --tab-border: #E1E1E1;
-  --tab-button-background: #9DA4B2;
+  --tab-border: #e1e1e1;
+  --tab-button-background: #9da4b2;
   --tab-button-text: #677289;
 }
 
