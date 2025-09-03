@@ -37,8 +37,9 @@ function SortableTab({
     <div
       ref={setNodeRef}
       style={style}
-      className="group flex items-center shrink-0 focus:outline-none focus-visible:border-[#2F72E2]"
+      className="group flex items-center"
       {...attributes}
+      tabIndex={-1}
       {...listeners}
     >
       {isDragging ? (

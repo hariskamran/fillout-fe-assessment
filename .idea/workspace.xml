@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61a213b0-6f1e-4050-842c-2c04db9f0e38" name="Changes" comment="Simplify hover actions by replacing `group-focus-within` with `group-has-[:focus-visible]`, remove unused `TabHoverActions` in `Container`, and improve focus styles for buttons and tabs.">
-      <change afterPath="$PROJECT_DIR$/src/components/layout/MobileRestriction.tsx" afterDir="false" />
+    <list default="true" id="61a213b0-6f1e-4050-842c-2c04db9f0e38" name="Changes" comment="&quot;Add viewport settings and restrict access to mobile devices with a new `MobileRestriction` component&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/components/SortableTab.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/components/SortableTab.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/components/TabButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/components/TabButton.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +205,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756906920869</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="&quot;Add viewport settings and restrict access to mobile devices with a new `MobileRestriction` component&quot;">
+      <option name="closed" value="true" />
+      <created>1756907979982</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1756907979982</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,7 +255,8 @@
     <MESSAGE value="Add horizontal scroll functionality with dynamic buttons for Containers" />
     <MESSAGE value="Add horizontal scroll and dynamic button behavior for containers and improve the fade-in animation for TabButton." />
     <MESSAGE value="Simplify hover actions by replacing `group-focus-within` with `group-has-[:focus-visible]`, remove unused `TabHoverActions` in `Container`, and improve focus styles for buttons and tabs." />
-    <option name="LAST_COMMIT_MESSAGE" value="Simplify hover actions by replacing `group-focus-within` with `group-has-[:focus-visible]`, remove unused `TabHoverActions` in `Container`, and improve focus styles for buttons and tabs." />
+    <MESSAGE value="&quot;Add viewport settings and restrict access to mobile devices with a new `MobileRestriction` component&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Add viewport settings and restrict access to mobile devices with a new `MobileRestriction` component&quot;" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
