@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61a213b0-6f1e-4050-842c-2c04db9f0e38" name="Changes" comment="Initial Commit">
+    <list default="true" id="61a213b0-6f1e-4050-842c-2c04db9f0e38" name="Changes" comment="**Update IDE workspace and config files**  &#10;- Updated `.idea/workspace.xml` to reflect changes in active configurations and recently modified files.  &#10;- Updated `tsconfig.json` and `pnpm-lock.yaml` for formatting consistency and dependency adjustments.  &#10;- Minor refactoring in `src/shadcn/lib/utils.ts` for code style enhancements.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/components/Container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/components/Container.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/components/TabButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/components/TabButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/data/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/data/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shadcn/lib/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shadcn/lib/utils.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stores/useAppStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/useAppStore.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +25,9 @@
     <option name="defaultAccountId" value="cb2822bc-524e-4b77-b006-d1fe351a0692" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -78,7 +74,7 @@
       <recent name="C:\FILES\Haris\Assessments\fillout\fe-assessment\src\shadcn" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.format">
+  <component name="RunManager" selected="npm.Next.js: server-side">
     <configuration name="Next.js: debug client-side" type="JavascriptDebugType" uri="http://localhost:3000/">
       <method v="2" />
     </configuration>
@@ -144,7 +140,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756849707364</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="**Update IDE workspace and config files**  &#10;- Updated `.idea/workspace.xml` to reflect changes in active configurations and recently modified files.  &#10;- Updated `tsconfig.json` and `pnpm-lock.yaml` for formatting consistency and dependency adjustments.  &#10;- Minor refactoring in `src/shadcn/lib/utils.ts` for code style enhancements.">
+      <option name="closed" value="true" />
+      <created>1756894969464</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1756894969465</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,7 +168,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Remove unnecessary `.idea` configuration files and `package-lock.json`." />
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="Introduce drag-and-drop functionality for tabs using `@dnd-kit`.&#10;&#10;- Implement `SortableTab` component for draggable tab elements.&#10;- Create `useDraggableTabs` hook to handle tab reordering logic and state.&#10;- Update `Container` to integrate draggable tabs with overlay support.&#10;- Extend `useAppStore` for tab order and drag state management.&#10;- Modify `TabButton` for better drag interactions.&#10;- Add utility exports (`PAGES_SLUGS`, `PAGES_BY_SLUG`) in `data/index`.&#10;- Install and configure `@dnd-kit` dependencies." />
+    <MESSAGE value="**Update IDE workspace and config files**  &#10;- Updated `.idea/workspace.xml` to reflect changes in active configurations and recently modified files.  &#10;- Updated `tsconfig.json` and `pnpm-lock.yaml` for formatting consistency and dependency adjustments.  &#10;- Minor refactoring in `src/shadcn/lib/utils.ts` for code style enhancements." />
+    <option name="LAST_COMMIT_MESSAGE" value="**Update IDE workspace and config files**  &#10;- Updated `.idea/workspace.xml` to reflect changes in active configurations and recently modified files.  &#10;- Updated `tsconfig.json` and `pnpm-lock.yaml` for formatting consistency and dependency adjustments.  &#10;- Minor refactoring in `src/shadcn/lib/utils.ts` for code style enhancements." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
