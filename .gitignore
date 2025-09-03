@@ -2,6 +2,8 @@
 
 # .junie/*
 setup.txt
+/.idea
+/.idea/**
 
 # dependencies
 /node_modules
