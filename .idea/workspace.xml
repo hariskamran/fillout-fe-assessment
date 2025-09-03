@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61a213b0-6f1e-4050-842c-2c04db9f0e38" name="Changes" comment="Refactor `TabButton` to include context menu; remove unused `blurOnMouseDown` prop.">
+    <list default="true" id="61a213b0-6f1e-4050-842c-2c04db9f0e38" name="Changes" comment="&quot;Add dynamic tab creation and insertion functionality with hover actions; refactor tab-related components for enhanced usability.&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/components/Container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/components/Container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/components/SmallRoundButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/components/SmallRoundButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/components/SortableTab.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/components/SortableTab.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/components/TabHoverActions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/components/TabHoverActions.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useDraggableTabs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useDraggableTabs.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stores/useAppStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/useAppStore.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +172,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756897945480</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="&quot;Add dynamic tab creation and insertion functionality with hover actions; refactor tab-related components for enhanced usability.&quot;">
+      <option name="closed" value="true" />
+      <created>1756900958283</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1756900958283</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,7 +218,8 @@
     <MESSAGE value="**Update workspace configuration and adjust pnpm-lock formatting**" />
     <MESSAGE value="Add `@radix-ui/react-context-menu` dependency" />
     <MESSAGE value="Refactor `TabButton` to include context menu; remove unused `blurOnMouseDown` prop." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor `TabButton` to include context menu; remove unused `blurOnMouseDown` prop." />
+    <MESSAGE value="&quot;Add dynamic tab creation and insertion functionality with hover actions; refactor tab-related components for enhanced usability.&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Add dynamic tab creation and insertion functionality with hover actions; refactor tab-related components for enhanced usability.&quot;" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

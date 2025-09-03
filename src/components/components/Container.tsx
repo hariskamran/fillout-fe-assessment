@@ -1,6 +1,6 @@
 'use client';
 
-import React, { ReactElement } from 'react';
+import React, { ReactElement, useEffect } from 'react';
 
 import { DndContext, DragOverlay } from '@dnd-kit/core';
 
@@ -10,10 +10,12 @@ import {
   SortableContext,
 } from '@dnd-kit/sortable';
 
+import HorizontalScrollButtons from '@/components/components/HorizontalScrollButtons';
 import SortableTab from '@/components/components/SortableTab';
 import TabButton from '@/components/components/TabButton';
 import TabHoverActions from '@/components/components/TabHoverActions';
 import useDraggableTabs from '@/hooks/useDraggableTabs';
+import useHorizontalScrollControls from '@/hooks/useHorizontalScrollControls';
 import useAppStore from '@/stores/useAppStore';
 import { Page } from '@/types';
 
@@ -31,13 +33,29 @@ function Container(): ReactElement {
   } = useDraggableTabs();
   const { addPageAt, addPageToEnd } = useAppStore();
 
+  const {
+    scrollRef,
+    canScrollLeft,
+    canScrollRight,
+    scrollLeft,
+    scrollRight,
+    update: updateScrollState,
+  } = useHorizontalScrollControls({ pageFactor: 0.6 });
+
   const overlayPage: Page | null = activeSlug
     ? orderedPages.find(p => p.slug === activeSlug) || null
     : null;
 
+  useEffect(() => {
+    updateScrollState();
+  }, [orderedPages.length, updateScrollState]);
+
   return (
-    <div className="w-[1100px] h-[72px] bg-white shadow-md rounded-md px-5">
-      <div className="w-auto h-full flex items-center relative overflow-y-hidden overflow-x-auto  [-ms-overflow-style:'none'] [scrollbar-width:'5px'] [&::-webkit-scrollbar]:hidden">
+    <div className="w-[1100px] h-[72px] bg-white shadow-md rounded-md px-5 relative">
+      <div
+        ref={scrollRef}
+        className="w-auto h-full flex items-center relative overflow-y-hidden overflow-x-auto whitespace-nowrap [-ms-overflow-style:'none'] [scrollbar-width:'none'] [&::-webkit-scrollbar]:hidden"
+      >
         <DndContext
           sensors={sensors}
           onDragStart={handleDragStart}
@@ -83,6 +101,13 @@ function Container(): ReactElement {
           onClick={() => addPageToEnd()}
         />
       </div>
+
+      <HorizontalScrollButtons
+        canScrollLeft={canScrollLeft}
+        canScrollRight={canScrollRight}
+        onLeft={scrollLeft}
+        onRight={scrollRight}
+      />
     </div>
   );
 }
