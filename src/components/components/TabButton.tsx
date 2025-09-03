@@ -31,12 +31,14 @@ function TabButton({
   icon,
   text,
   onClick,
+  blurOnMouseDown,
 }: {
   className?: string;
   variant: 'default' | 'active' | null | undefined;
   icon: string;
   text: string;
   onClick?: () => void;
+  blurOnMouseDown?: boolean;
 }): ReactElement {
   const iconColor = variant === 'active' ? '_active' : '';
   const showOptions = variant === 'active' && icon !== 'add';
@@ -48,6 +50,7 @@ function TabButton({
         tabButtonVariants({ variant: variant || 'default', className }),
       )}
       onClick={onClick}
+      onMouseDown={blurOnMouseDown ? e => e.currentTarget.blur() : undefined}
     >
       <Image
         src={`/icons/${icon}${iconColor}.svg`}

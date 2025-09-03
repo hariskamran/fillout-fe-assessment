@@ -4,24 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61a213b0-6f1e-4050-842c-2c04db9f0e38" name="Changes" comment="Initial Commit">
-      <change afterPath="$PROJECT_DIR$/public/icons/add_active.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/components/Container.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/components/SmallRoundButton.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/components/TabButton.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/components/TabHoverActions.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/components/ui/DottedLines.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/data/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layout/MainLayout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stores/useAppStore.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/index.ts" afterDir="false" />
+    <list default="true" id="61a213b0-6f1e-4050-842c-2c04db9f0e38" name="Changes" comment="Implement tab navigation structure and initial UI components&#10;&#10;- Add core `Container` component for tab layout.&#10;- Introduce `TabButton` and `TabHoverActions` for interactive tab behavior.&#10;- Create utility components: `DottedLines` and `SmallRoundButton`.&#10;- Add `useAppStore` for state management using Zustand.&#10;- Set up `PAGES` data and associated `Page` type definition.&#10;- Update `tsconfig.json` paths for organized imports.&#10;- Include dependencies: `zustand`, `class-variance-authority`, `clsx`, and more.">
+      <change afterPath="$PROJECT_DIR$/src/components/components/SortableTab.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useDraggableTabs.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/components/Container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/components/Container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/components/TabButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/components/TabButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/data/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/data/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stores/useAppStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/useAppStore.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +24,11 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GithubDefaultAccount">
@@ -52,7 +49,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "feature/drag-to-reorder",
     "js.debugger.nextJs.config.created.client": "true",
     "js.debugger.nextJs.config.created.server": "true",
     "js.linters.configure.manually.selectedeslint": "true",
@@ -116,7 +113,7 @@
       <workItem from="1756849222499" duration="309000" />
       <workItem from="1756849536737" duration="13000" />
       <workItem from="1756849565924" duration="47000" />
-      <workItem from="1756849616589" duration="18824000" />
+      <workItem from="1756849616589" duration="26758000" />
     </task>
     <task id="LOCAL-00001" summary="Remove unnecessary `.idea` configuration files and `package-lock.json`.">
       <option name="closed" value="true" />
@@ -134,7 +131,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756849707364</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Implement tab navigation structure and initial UI components&#10;&#10;- Add core `Container` component for tab layout.&#10;- Introduce `TabButton` and `TabHoverActions` for interactive tab behavior.&#10;- Create utility components: `DottedLines` and `SmallRoundButton`.&#10;- Add `useAppStore` for state management using Zustand.&#10;- Set up `PAGES` data and associated `Page` type definition.&#10;- Update `tsconfig.json` paths for organized imports.&#10;- Include dependencies: `zustand`, `class-variance-authority`, `clsx`, and more.">
+      <option name="closed" value="true" />
+      <created>1756869001580</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1756869001580</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,7 +150,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -154,7 +171,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Remove unnecessary `.idea` configuration files and `package-lock.json`." />
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="Add new icons, components, and utilities for improved UI functionality" />
+    <MESSAGE value="Implement tab navigation structure and initial UI components&#10;&#10;- Add core `Container` component for tab layout.&#10;- Introduce `TabButton` and `TabHoverActions` for interactive tab behavior.&#10;- Create utility components: `DottedLines` and `SmallRoundButton`.&#10;- Add `useAppStore` for state management using Zustand.&#10;- Set up `PAGES` data and associated `Page` type definition.&#10;- Update `tsconfig.json` paths for organized imports.&#10;- Include dependencies: `zustand`, `class-variance-authority`, `clsx`, and more." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement tab navigation structure and initial UI components&#10;&#10;- Add core `Container` component for tab layout.&#10;- Introduce `TabButton` and `TabHoverActions` for interactive tab behavior.&#10;- Create utility components: `DottedLines` and `SmallRoundButton`.&#10;- Add `useAppStore` for state management using Zustand.&#10;- Set up `PAGES` data and associated `Page` type definition.&#10;- Update `tsconfig.json` paths for organized imports.&#10;- Include dependencies: `zustand`, `class-variance-authority`, `clsx`, and more." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
