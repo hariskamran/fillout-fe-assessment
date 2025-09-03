@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="61a213b0-6f1e-4050-842c-2c04db9f0e38" name="Changes" comment="**Update IDE workspace and config files**  &#10;- Updated `.idea/workspace.xml` to reflect changes in active configurations and recently modified files.  &#10;- Updated `tsconfig.json` and `pnpm-lock.yaml` for formatting consistency and dependency adjustments.  &#10;- Minor refactoring in `src/shadcn/lib/utils.ts` for code style enhancements.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/components/TabButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/components/TabButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/components/Container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/components/Container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/components/TabContextMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/components/TabContextMenu.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +147,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756894969465</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="**Update IDE workspace and config files**  &#10;- Updated `.idea/workspace.xml` to reflect changes in active configurations and recently modified files.  &#10;- Updated `tsconfig.json` and `pnpm-lock.yaml` for formatting consistency and dependency adjustments.  &#10;- Minor refactoring in `src/shadcn/lib/utils.ts` for code style enhancements.">
+      <option name="closed" value="true" />
+      <created>1756896670588</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1756896670588</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

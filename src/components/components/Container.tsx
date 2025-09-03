@@ -13,7 +13,7 @@ function Container(): ReactElement {
   const { page, setPage } = useAppStore();
 
   return (
-    <div className="w-full max-w-[1100px] h-[72px] bg-white shadow-md rounded-md px-5">
+    <div className="w-[1100px] h-[72px] bg-white shadow-md rounded-md px-5">
       <div className="w-auto h-full flex items-center relative overflow-hidden">
         {PAGES.map(
           ({ icon, slug, name }: Page): ReactElement => (

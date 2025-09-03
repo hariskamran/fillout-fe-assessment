@@ -13,7 +13,7 @@ function TabContextMenu(): ReactElement {
   return (
     <ContextMenuContent className="w-56 border-0">
       {/* Header */}
-      <ContextMenuLabel>Settings</ContextMenuLabel>
+      <ContextMenuLabel className="text-lg">Settings</ContextMenuLabel>
 
       <ContextMenuSeparator />
 
@@ -42,12 +42,14 @@ function TabContextMenu(): ReactElement {
         <span>Duplicate</span>
       </ContextMenuItem>
 
-      <ContextMenuSeparator />
+      <div className="w-full px-3">
+        <ContextMenuSeparator />
+      </div>
 
       {/* Footer */}
       <ContextMenuItem variant="destructive">
         <Image src="/icons/delete.svg" alt="delete" width={16} height={16} />
-        <span>Destructive delete</span>
+        <span>delete</span>
       </ContextMenuItem>
     </ContextMenuContent>
   );
