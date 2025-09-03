@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61a213b0-6f1e-4050-842c-2c04db9f0e38" name="Changes" comment="Add horizontal scroll functionality with dynamic buttons for Containers">
+    <list default="true" id="61a213b0-6f1e-4050-842c-2c04db9f0e38" name="Changes" comment="Add horizontal scroll and dynamic button behavior for containers and improve the fade-in animation for TabButton.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/components/TabButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/components/TabButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/components/Container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/components/Container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/components/SmallRoundButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/components/SmallRoundButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/components/SortableTab.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/components/SortableTab.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/components/TabHoverActions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/components/TabHoverActions.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/context-menu" />
+        <entry key="$PROJECT_DIR$" value="feature/add-new-tab" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -43,7 +45,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/add-new-tab",
+    "git-widget-placeholder": "fix/hover-interaction",
     "js.debugger.nextJs.config.created.client": "true",
     "js.debugger.nextJs.config.created.server": "true",
     "js.linters.configure.manually.selectedeslint": "true",
@@ -189,7 +191,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756902454899</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add horizontal scroll and dynamic button behavior for containers and improve the fade-in animation for TabButton.">
+      <option name="closed" value="true" />
+      <created>1756903923729</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1756903923729</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,7 +239,8 @@
     <MESSAGE value="Refactor `TabButton` to include context menu; remove unused `blurOnMouseDown` prop." />
     <MESSAGE value="&quot;Add dynamic tab creation and insertion functionality with hover actions; refactor tab-related components for enhanced usability.&quot;" />
     <MESSAGE value="Add horizontal scroll functionality with dynamic buttons for Containers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add horizontal scroll functionality with dynamic buttons for Containers" />
+    <MESSAGE value="Add horizontal scroll and dynamic button behavior for containers and improve the fade-in animation for TabButton." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add horizontal scroll and dynamic button behavior for containers and improve the fade-in animation for TabButton." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
