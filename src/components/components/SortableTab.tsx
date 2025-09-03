@@ -37,7 +37,7 @@ function SortableTab({
     <div
       ref={setNodeRef}
       style={style}
-      className="group flex items-center shrink-0"
+      className="group flex items-center shrink-0 focus:outline-none focus-visible:border-[#2F72E2]"
       {...attributes}
       {...listeners}
     >

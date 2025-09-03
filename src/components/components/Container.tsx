@@ -13,7 +13,6 @@ import {
 import HorizontalScrollButtons from '@/components/components/HorizontalScrollButtons';
 import SortableTab from '@/components/components/SortableTab';
 import TabButton from '@/components/components/TabButton';
-import TabHoverActions from '@/components/components/TabHoverActions';
 import useDraggableTabs from '@/hooks/useDraggableTabs';
 import useHorizontalScrollControls from '@/hooks/useHorizontalScrollControls';
 import useAppStore from '@/stores/useAppStore';
@@ -67,9 +66,6 @@ function Container(): ReactElement {
             items={tabsOrder}
             strategy={horizontalListSortingStrategy}
           >
-            {/* insertion slot before first tab */}
-            <TabHoverActions onInsert={() => addPageAt(0)} />
-
             {orderedPages.map((p, i) => (
               <SortableTab
                 key={p.slug}
