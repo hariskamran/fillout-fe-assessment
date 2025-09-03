@@ -47,49 +47,46 @@ function TabButton({
   const showOptions = isActive && icon !== 'add';
   const iconColor = isActive ? '_active' : '';
 
-  const Button: ReactElement = (
-    <button
-      type="button"
-      onClick={onClick}
-      onContextMenu={e => {
-        if (!isActive) e.preventDefault();
-      }}
-      className={cn(
-        tabButtonVariants({ variant: variant || 'default', className }),
-      )}
-    >
-      <Image
-        src={`/icons/${icon}${iconColor}.svg`}
-        alt={text.toLowerCase()}
-        width={20}
-        height={20}
-      />
-      <span>{text}</span>
-      <div
-        className={cn(
-          'inline-flex items-center justify-center overflow-hidden transition-all duration-200 ease-out',
-          showOptions
-            ? 'w-4 ml-1 opacity-100 scale-100 translate-x-0'
-            : 'w-0 ml-0 opacity-0 scale-75 -translate-x-1 pointer-events-none',
-        )}
-        aria-hidden={!showOptions}
-      >
-        <Image
-          src="/icons/options.svg"
-          alt={`${text.toLowerCase()} options`}
-          width={16}
-          height={16}
-          className="w-4 h-4"
-        />
-      </div>
-    </button>
-  );
-
-  if (!showOptions) return Button;
-
   return (
     <ContextMenu>
-      <ContextMenuTrigger asChild>{Button}</ContextMenuTrigger>
+      <ContextMenuTrigger asChild>
+        <button
+          type="button"
+          onClick={onClick}
+          onContextMenu={e => {
+            if (!isActive) e.preventDefault();
+          }}
+          className={cn(
+            'fade-in-pop',
+            tabButtonVariants({ variant: variant || 'default', className }),
+          )}
+        >
+          <Image
+            src={`/icons/${icon}${iconColor}.svg`}
+            alt={text.toLowerCase()}
+            width={20}
+            height={20}
+          />
+          <span>{text}</span>
+          <div
+            className={cn(
+              'inline-flex items-center justify-center overflow-hidden transition-all duration-200 ease-out',
+              showOptions
+                ? 'w-4 ml-1 opacity-100 scale-100 translate-x-0'
+                : 'w-0 ml-0 opacity-0 scale-75 -translate-x-1 pointer-events-none',
+            )}
+            aria-hidden={!showOptions}
+          >
+            <Image
+              src="/icons/options.svg"
+              alt={`${text.toLowerCase()} options`}
+              width={16}
+              height={16}
+              className="w-4 h-4"
+            />
+          </div>
+        </button>
+      </ContextMenuTrigger>
       <TabContextMenu />
     </ContextMenu>
   );
